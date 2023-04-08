@@ -11,6 +11,9 @@ public class CriaConta {
 		
 		primeiraConta.saldo += 100;
 		System.out.println(primeiraConta.saldo);
+		
+		primeiraConta.saldo += 300;
+		System.out.println(primeiraConta.saldo);
 
 	}
 
