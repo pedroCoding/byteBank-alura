@@ -1,13 +1,13 @@
-package byteBankComposto;
+package byteBankHerdado;
 
 import java.util.Scanner;
 
 public class Conta {
 	
 	private double saldo;
-	int agencia;
-	int numero;
-	Cliente titular;
+	private int agencia;
+	private int numero;
+	private Cliente titular;
 	
 	Scanner leia = new Scanner(System.in);
 
@@ -54,15 +54,42 @@ public class Conta {
 	
 	
 	
-	//GET E SETTS (METODOS)
-	public double pegaSaldo(){
+	public double getSaldo() {
 		if(saldo <= 0) {
 			System.out.println("O seu saldo atualmente é de R$0,00");
 		}else {
 			System.out.println("Seu saldo é de : R$"+this.saldo);
 			
 		}
-		return this.saldo;
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public Cliente getTitular() {
+		return titular;
+	}
+
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
 	}
 
 }

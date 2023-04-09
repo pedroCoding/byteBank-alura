@@ -4,10 +4,10 @@ public class TesteSaldoNegativo {
 
 	public static void main(String[] args) {
 		Conta pedro = new Conta();
-		pedro.deposita(100);
-		pedro.sacar(200);
+		pedro.deposita(1100);
+		pedro.sacar(100);
 		
-		System.out.println("O saldo na conta é de "+pedro.saldo);
+		pedro.pegaSaldo();
 
 	}
 
