@@ -14,7 +14,7 @@ public class Conta {
 	
 	//MÉTODO DEPOSITA (Não retorna nada - VOID)
 	void deposita(double valor) {
-		this.saldo = this.saldo + valor;
+		this.saldo += valor;
 		System.out.println("Deposito realizado com sucesso. O valor depositado é de: R$"+valor);
 		System.out.println("");
 	}
@@ -24,8 +24,10 @@ public class Conta {
 		
 		if(this.saldo >= valor) {
 			this.saldo = this.saldo - valor;
+			System.out.println("Saque efetuado com sucesso no valor de R$"+valor);
 			return true;
 		}else {
+			System.out.println("Não foi possivel efetuar o saque. Valor indisponivel!");
 			return false;
 		}
 	}
