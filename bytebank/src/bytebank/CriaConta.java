@@ -9,12 +9,19 @@ public class CriaConta {
 		
 		
 		Conta segundaConta = new Conta();
-		segundaConta.saldo = 500;
+		segundaConta.saldo = 200;
+
+		
+		System.out.println("Saldo 1° conta antes da transferencia: R$"+primeiraConta.saldo);
+		System.out.println("Saldo 2° conta antes da transferencia: R$"+segundaConta.saldo);
+		
+		System.out.println("");
+		segundaConta.transfere(200, primeiraConta);
+		System.out.println("");
 		
 		
-		
-		System.out.println("O saldo da primeira conta é: "+primeiraConta.saldo);
-		System.out.println("O saldo da segunda conta é: "+segundaConta.saldo);
+		System.out.println("Saldo 1° conta apos a transferencia: R$"+primeiraConta.saldo);
+		System.out.println("Saldo 2° conta apos a transferencia: R$"+segundaConta.saldo);
 		
 
 	}
